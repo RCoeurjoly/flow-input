@@ -1,0 +1,36 @@
+* Warning
+Work in progress. Working in the open.
+* Goal
+instead of searching for comprehensible input, create it yourself.
+* Theory
+Krashen comprehensible input hypothesis.
+* Questions
+** TODO_NEXT How much must be known for input to be comprehensible?
+- State "TODO_NEXT"  from              [2026-05-25 Mon 10:49]
+** TODO_NEXT When we know nothing, other words do not help. How to deal with that? Pictures, but how many? how?
+- State "TODO_NEXT"  from              [2026-05-25 Mon 10:50]
+** TODO_NEXT How many repetitions for a word to be learned?
+- State "TODO_NEXT"  from              [2026-05-25 Mon 10:49]
+* Notes: https://chatgpt.com/s/t_6a1428f5e27c8191add4512bfa31845b
+ideas de aprendizaje de idiomas
+lo que dice el académico es de crear cuentos, historias, comprensibles, generadas por IA, con imágenes. el audio también es importante, pero con TTS bueno se podría solventar. que es comprensible? depende del nivel de cada estudiante. y de qué otros idiomas sabe. habría que hacer un análisis de corpus, extrayendo el vocabulario ordenado por frecuencia. y preguntarse, cual es libro más fácil de todo el corpus, para cierto idioma? cuantas palabras son necesarias saber para leerlo con entendimiento? también cabría preguntarse si todos los libros siguen la misma distribución de palabras o no. es decir, como defines un libro en términos de dificultad y vocabulario? luego también, habría que hacer un análisis de similitud léxica. por ejemplo, digamos que soy hablante nativo de español y quiero aprender latín. de las palabras necesitas para leer el libro nativo más fácil en latín, cuales son parecidas al español? por ejemplo, LLPSI empieza con Roma in Italia est. esa frase es completamente comprensible para un hablante de español. se tendría que calcular la distancia de cada palabra a su equivalente en el idioma nativo del estudiante. 0 es que son iguales, 1 es que son completamente distintas. por ejemplo, cebolla en catalán es ceba, lo cual es cierta distancia. luego hay que controlar muy bien la introducción de nuevo vocabulario. 98% tiene que ser sabido, y tiene que haber 5 repeticiones para que la adquisición se consolide.
+
+ideal final result es un libro que me enseña latín. sin ejercicios, sin tener que releer si no quiero, haciendo lectura extensiva, no intensiva. sin necesidad de uso de diccionario. e interesante.
+
+entonces, digamos que tengo un corpus amplio de latín. primero extraigo vocabulario ordenado por frecuencia, a lo zip law. luego asigno palabra sinónima en español. posiblemente en otros varios idiomas, porque también se francés e inglés. luego calculo distancia para cada palabra. también tengo que saber el vocabulario necesario para empezar a leer nativo. entonces ya sé lo que tengo que aprender: ese vocabulario.
+
+ahora hay que introducir ese vocabulario de manera progresiva, sabiendo que tiene que estar en un contexto de 98% de vocabulario conocido y que hay que introducir la palabra nueva 5 veces para adquirirla. esto me suena bastante a constraint programming, como minizinc. aunque por supuesto por encima de eso las frases tienen que tener sentido y la historia tiene que ser interesante y tener sentido también..
+
+
+____ 
+Como empezar con esto? Supon que ya tengo el corpus de latín
+
+El paso 6 me parece interesante. Extraer frases comprensibles. La cosa es: ChatGPT es lo suficientemente bueno como para generar una historia corta coherente e interesante? Con latín correcto? Si sí, yo luego tendría que crear herramientas para guiar codex en un refinamiento de la historia en el sentido de facilidad de comprensión: frases cortas, sencillas, vocabulario acotado y conforme a reglas de aprendizaje (frecuencia, contexto comprensible, aparición de la palabra nueva 5 veces, etc)
+
+Sí, lo qué digo es de crear un verificador automático. Saber que es comprensible es un paso necesario e importante para crear material comprensible. Hasta ahora he trabajado a nivel de libros, estaría bien hacerlo a nivel más fino, con frases y párrafos. 
+
+Si sabemos que vocabulario y cuanto tenemos que aprender, y sabemos cuánto contexto hay que poner, podemos saber cuánto texto es necesario para aprender. Si sabemos cuánto texto, dada una cierta velocidad de lectura, sabemos cuánto tiempo. 
+
+Eso es muy interesante. Yo quiero saber cuánto tiempo quiero tardar en aprender latín, lo suficientemente bien como para poder leer algún libro nativo. Y que ese proceso sea puro flow de Mihaly Csikszentmihalyi. Sin ejercicios, sin lectura .
+
+Ese tiempo es la clave. Saber decir, se necesitan 1000 horas para tener un B2 de chino partiendo de cero. Ya hay estimaciones de tiempo, pero este sistema sería de puro flow, y mucho más fiable. Esa cifra de tiempo sería mucho más fiable
